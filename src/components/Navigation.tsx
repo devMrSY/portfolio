@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Navigation = () => {
+interface NavigationProps {
+  onModeSwitch?: (mode: 'traditional' | 'video') => void;
+  currentMode?: 'traditional' | 'video';
+}
+
+const Navigation = ({ onModeSwitch, currentMode }: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -56,6 +61,14 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            {currentMode === 'traditional' && onModeSwitch && (
+              <button
+                onClick={() => onModeSwitch('video')}
+                className="text-sm px-3 py-1 bg-slate-200 text-slate-700 rounded-full hover:bg-slate-300 transition-colors font-medium"
+              >
+                Video Mode
+              </button>
+            )}
           </div>
 
           <button
@@ -79,6 +92,14 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            {currentMode === 'traditional' && onModeSwitch && (
+              <button
+                onClick={() => onModeSwitch('video')}
+                className="block w-full text-left text-slate-700 hover:text-blue-600 transition-colors font-medium py-2 mt-4 pt-4 border-t"
+              >
+                Switch to Video Mode
+              </button>
+            )}
           </div>
         </div>
       )}
