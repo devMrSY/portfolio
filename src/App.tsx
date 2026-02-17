@@ -8,7 +8,24 @@ import Contact from './components/Contact';
 import Navigation from './components/Navigation';
 import ModeSelector from './components/ModeSelector';
 import VideoJourney from './components/VideoJourney';
-import { ThemeProvider } from './contexts/ThemeContext';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+
+function TraditionalView({ onModeSwitch }: { onModeSwitch: (mode: 'traditional' | 'video') => void }) {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
+  return (
+    <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950' : 'bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100'}`}>
+      <Navigation onModeSwitch={onModeSwitch} currentMode="traditional" />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Education />
+      <Contact />
+    </div>
+  );
+}
 
 function App() {
   const [mode, setMode] = useState<'traditional' | 'video' | null>(null);
@@ -43,15 +60,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-900">
-        <Navigation onModeSwitch={handleModeSelect} currentMode={mode} />
-        <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Education />
-      <Contact />
-      </div>
+      <TraditionalView onModeSwitch={handleModeSelect} />
     </ThemeProvider>
   );
 }
