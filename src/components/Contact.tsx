@@ -1,10 +1,9 @@
-import { Mail, Phone, MapPin, Linkedin, Github, Download } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Download } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const Contact = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
-
   const contactInfo = [
     {
       icon: Mail,
@@ -88,15 +87,16 @@ const Contact = () => {
               Send Me an Email
             </a>
             <a
-              href="https://drive.google.com/file/d/1XlssP3sPQzSSIWu0LwFREBqDog0YT7uo/view?usp=sharing"
+              href="https://drive.google.com/file/d/1M_PMEYwuQLYd1qWwm-HnpJa7xVmzxCYL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex items-center justify-center gap-2 px-8 py-4 text-white rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg font-medium ${isDark ? 'bg-slate-600 hover:bg-slate-500' : 'bg-slate-700 hover:bg-slate-800'}`}
             >
-              <Download size={24} />
-              Download Resume
+              <Download size={24} className="animate-bounce" />
+              Download
             </a>
           </div>
+
         </div>
       </div>
 

@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Sooraj Yadav</title>
+    <style>
+      :root {
+        --text: #111111;
+        --muted: #333333;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: #ffffff;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .resume {
+        padding: 0;
+        max-width: 100%;
+        margin: 0;
+      }
+
+      .header {
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin: 16px 0 6px;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      h3 {
+        margin: 10px 0 2px;
+        font-size: 13.5px;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 3px 0;
+      }
+
+      a {
+        color: #0645ad;
+        text-decoration: underline;
+      }
+
+      .contact-grid {
+        display: block;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 6px 0 8px 18px;
+      }
+
+      li {
+        margin: 3px 0;
+      }
+
+      .section {
+        margin-bottom: 12px;
+      }
+
+      .subheading {
+        font-weight: 700;
+      }
+
+      .label {
+        font-weight: 700;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 12.5px;
+      }
+
+      .print-bar {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+
+      .print-button {
+        border: 1px solid #d1d5db;
+        background: #111827;
+        color: #ffffff;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 32px;
+      }
+
+      .print-button.secondary {
+        background: #ffffff;
+        color: #111827;
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+          padding: 0;
+        }
+
+        .resume {
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          padding: 0;
+        }
+
+        .print-bar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <div class="print-bar">
+        <a class="print-button secondary" href="https://drive.google.com/file/d/14CqdrDNWRRBkRY27T2s0LmNj75CQrJcU/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download PDF</a>
+        <button class="print-button" type="button" onclick="window.print()">Print</button>
+      </div>
+      <div class="header">
+        <h1>Sooraj Yadav</h1>
+        <div class="contact-grid">
+          <div>Mobile No: 9211139060</div>
+          <div>Email Id: frankSooraj@gmail.com</div>
+          <div>LinkedIn Profile: https://www.linkedin.com/in/devmrsy/</div>
+          <div>Address: South Delhi 110080, Delhi India</div>
+        </div>
+      </div>
+
+      <h2>Work Experience</h2>
+
+      <div class="section">
+        <div class="subheading">MEAN Stack Developer - Software Engineer II</div>
+        <div class="row meta">
+          <div>GluedIn (In-App Content &amp; Community SaaS Platform)</div>
+        </div>
+        <div class="row meta">
+          <div>(Feb-5-24 - Present)</div>
+          <div>Gurugram</div>
+        </div>
+        <p class="label">Roles and Responsibilities</p>
+        <ul>
+          <li>Leading the development of AI-based features, integrating large language models (LLMs) and cloud AI to automate content understanding, moderation, and enrichment for video, image, text, and audio</li>
+          <li>Owned GluedIn’s main marketing website in Next.js, delivering new features, blog updates, and ongoing content changes.</li>
+          <li>Designed and implemented content screening systems for text, detecting profanity, hate speech, and sensitive context using Perspective API.</li>
+          <li>Migrated Java microservices to Node.js, enhancing system efficiency and scalability.</li>
+          <li>Led the end-to-end implementation of content moderation services, handling video, audio, and text moderation.</li>
+          <li>Optimized the performance of an existing admin panel and migrated it to React for improved user experience.</li>
+          <li>Developed responsive screens using a modular approach to ensure flexibility and maintainability.</li>
+          <li>Utilized AWS and GCP services, including Pub/Sub for serverless messaging systems, to streamline communication and data processing.</li>
+          <li>Managed deployment processes with Jenkins and monitored services using AWS CloudWatch.</li>
+        </ul>
+        <p class="label">Technology</p>
+        <ul>
+          <li>Cloud Platforms: AWS (Rekognition, SQS, SNS, EC2), GCP (Pub/Sub, Perspective API, Speech-to-Text), Bedrock</li>
+          <li>Deployment: Jenkins CI/CD</li>
+          <li>Languages: Primary (JavaScript, JSX, TypeScript), Secondary (Python, Java 8)</li>
+          <li>Frameworks: Node.js, Spring Boot, Angular, React.js, Next.js, Redux, Express, NestJS; Fury for Angular</li>
+          <li>Others: FFmpeg, Monolithic and Microservices, Docker</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="subheading">Full Stack Developer.</div>
+        <div class="row meta">
+          <div>Creative Hustlers</div>
+        </div>
+        <div class="row meta">
+          <div>(Mar-20-23 - Feb-01-24)</div>
+          <div>Gujarat</div>
+        </div>
+        <p class="label">Roles and Responsibilities</p>
+        <ul>
+          <li>Played a key role in developing and enhancing backend services</li>
+          <li>Strengthened authentication systems to ensure robust security and protect user data.</li>
+          <li>Implemented video streaming capabilities using Agora SDK, significantly enhancing interactive features.</li>
+          <li>Integrated real-time chat functionality with Socket.io, boosting user engagement and interactivity.</li>
+          <li>Designed responsive, user-friendly interfaces using Material-UI 4/5, incorporating a custom theme for a distinctive visual identity</li>
+        </ul>
+        <p class="label">Technology</p>
+        <ul>
+          <li>Framework: frontend (React.js, Material UI, Redux toolkit). Backend: (Node.js and NestJS)</li>
+          <li>Database Mgmt.: Database: (MongoDB and SQL). ORM: (Sequelize and Mongoose)</li>
+          <li>SDK: Agora and Socket.io</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="subheading">Software Developer Level 1</div>
+        <div class="row meta">
+          <div>Softsages: Revolutionizing Food Ordering and Payment for Every Occasion (client side)</div>
+        </div>
+        <div class="row meta">
+          <div>(January-2022 - March 2023)</div>
+          <div>Noida</div>
+        </div>
+        <p class="label">Responsibilities</p>
+        <ul>
+          <li>UI &amp; Product Development: Led UI development and created "Glyde Experience."</li>
+          <li>Internationalization: Implemented multi-language support.</li>
+          <li>Responsive Design: Utilized Material-UI 4/5 for responsive design.</li>
+          <li>Custom Components: Developed modular and custom components.</li>
+          <li>Authentication &amp; Backend: Enhanced authentication and created backend services.</li>
+          <li>Middleware &amp; Testing: Developed middleware, maintained Postman collections for API testing.</li>
+          <li>Payment Gateway Integration: Successfully integrated the Stripe payment gateway.</li>
+        </ul>
+        <p class="label">Technology</p>
+        <ul>
+          <li>Nodejs, Express, ReactJS, MongoDB, typescript, Mongoose ORM, Stripe, MUI-5/4, Google script (Internationalization), React-redux</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="subheading">Associate Software Engineer (Front-End)</div>
+        <div class="row meta">
+          <div>Tech Superiors Consulting</div>
+        </div>
+        <div class="row meta">
+          <div>(January-2021 - December 2021)</div>
+          <div>Gurugram</div>
+        </div>
+        <p class="label">Responsibilities</p>
+        <ul>
+          <li>Responsive UI component using bootstrap and React-Bootstrap.</li>
+          <li>Managed two critical modules, implementing CRUD operations with Redux and thunk middleware.</li>
+          <li>Integrated external APIs using Axios for data exchange.</li>
+          <li>Implemented secure routing for different user flows.</li>
+          <li>Conducted end-to-end manual testing for quality assurance.</li>
+        </ul>
+        <p class="label">Technology</p>
+        <ul>
+          <li>React.js (class or functional based component), TypeScript, Redux with thunk, Axios for API integration</li>
+        </ul>
+      </div>
+
+      <h2>Education</h2>
+      <div class="section">
+        <div>B.tech</div>
+        <div class="row meta">
+          <div>HMR Institute of Technology &amp; Mgmt., GGSIPU (July-17 - October 20)</div>
+          <div>Delhi, India</div>
+        </div>
+        <p>Graduation</p>
+        <ul>
+          <li>Bachelor in Technology specification in Computer Science Engineering.</li>
+        </ul>
+      </div>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: Primary: JavaScript (ES5, ES6), TypeScript, JSX; Secondary: Python 3.6, Java 8</li>
+        <li>Markup Languages: HTML, HTML5</li>
+        <li>CSS and Frameworks: Primary: CSS3, Bootstrap, React Bootstrap, Material-UI (MUI 4 and MUI 5); Secondary: Tailwind, Fury for Angular</li>
+        <li>Frontend Frameworks and Libraries: Primary: React.js, Redux; Secondary: Angular, Next.js</li>
+        <li>Backend Frameworks: Primary: Express.js, NestJS; Secondary: Spring Boot</li>
+        <li>Cloud Platforms: AWS: Rekognition, SQS, SNS, EC2; GCP: Pub/Sub, Perspective API, Speech-to-Text</li>
+        <li>Deployment: Jenkins CI/CD</li>
+        <li>APIs/SDKs: Agora SDK, Socket.io, AWS SDK (SQS, Rekognition), Google Cloud Pub/Sub SDK</li>
+        <li>SDK: Agora, Socket.io. AWS SDK for SQS, AWS SDK for Rekognition, Google Cloud Pub/Sub SDK</li>
+        <li>ORMs: Sequelize, Mongoose</li>
+        <li>Performance Monitoring: AWS CloudWatch</li>
+        <li>Tools: Git, Jira, ClickUp, Bitbucket, Confluence, Docker, Postman</li>
+      </ul>
+
+      <h2>Achievements</h2>
+      <p>Identified my skills and promoted myself as SD1.</p>
+      <p>Identified my skills and promoted myself as SD2.</p>
+
+      <h2>Certification</h2>
+      <p>I completed my summer training in MEAN Stack technology and also worked on a project named Koncept Interior.</p>
+
+      <h2>Languages</h2>
+      <div class="row">
+        <div>Hindi</div>
+        <div>Proficiency</div>
+      </div>
+      <div class="row">
+        <div>English</div>
+        <div>Proficiency</div>
+      </div>
+    </div>
+  </body>
+</html>
