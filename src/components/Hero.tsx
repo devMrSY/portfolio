@@ -1,6 +1,10 @@
 import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 
 const Hero = () => {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
   return (
     <section
       id="hero"
@@ -8,17 +12,17 @@ const Hero = () => {
     >
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-4">
+          <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold ${isDark ? 'text-white' : 'text-slate-900'} mb-4`}>
             Sooraj Yadav
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-3xl text-slate-600 mb-6">
+          <p className={`text-xl sm:text-2xl lg:text-3xl ${isDark ? 'text-slate-400' : 'text-slate-600'} mb-6`}>
             Software Engineer II
           </p>
-          <p className="text-lg sm:text-xl text-blue-600 font-medium mb-8">
+          <p className="text-lg sm:text-xl text-blue-600 dark:text-blue-400 font-medium mb-8">
             Full Stack – AI & Video Platforms
           </p>
 
-          <div className="flex flex-wrap justify-center items-center gap-4 mb-8 text-slate-600">
+          <div className={`flex flex-wrap justify-center items-center gap-4 mb-8 ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
             <div className="flex items-center gap-2">
               <MapPin size={18} />
               <span>South Delhi, India</span>
@@ -41,7 +45,7 @@ const Hero = () => {
               href="https://linkedin.com/in/devmrsy/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 bg-slate-700 text-white rounded-lg hover:bg-slate-800 transition-all duration-300 hover:scale-105 shadow-lg"
+              className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg ${isDark ? 'bg-slate-700 text-white hover:bg-slate-600' : 'bg-slate-700 text-white hover:bg-slate-800'}`}
             >
               <Linkedin size={20} />
               LinkedIn
@@ -53,7 +57,7 @@ const Hero = () => {
               onClick={() => {
                 document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="text-slate-400 hover:text-slate-600 transition-colors"
+              className={`transition-colors ${isDark ? 'text-slate-500 hover:text-slate-400' : 'text-slate-400 hover:text-slate-600'}`}
             >
               <svg
                 className="w-8 h-8 mx-auto"

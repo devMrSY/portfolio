@@ -1,6 +1,10 @@
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 
 const Experience = () => {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
   const experiences = [
     {
       title: 'Software Engineer II',
@@ -61,9 +65,9 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+    <section id="experience" className={`py-20 px-4 sm:px-6 lg:px-8 ${isDark ? 'bg-slate-900' : 'bg-slate-50'}`}>
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
+        <h2 className={`text-4xl font-bold mb-12 text-center ${isDark ? 'text-white' : 'text-slate-900'}`}>
           Work Experience
         </h2>
 
@@ -71,22 +75,22 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300"
+              className={`rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 ${isDark ? 'bg-slate-800' : 'bg-white'}`}
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="mb-4 md:mb-0">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-1">
+                  <h3 className={`text-2xl font-bold mb-1 ${isDark ? 'text-white' : 'text-slate-900'}`}>
                     {exp.title}
                   </h3>
                   {exp.subtitle && (
-                    <p className="text-blue-600 font-medium mb-2">{exp.subtitle}</p>
+                    <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">{exp.subtitle}</p>
                   )}
-                  <p className="text-lg text-slate-700 font-medium mb-2">
+                  <p className={`text-lg font-medium mb-2 ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
                     <Briefcase className="inline mr-2" size={18} />
                     {exp.company}
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 text-slate-600">
+                <div className={`flex flex-col gap-2 ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
                   <div className="flex items-center gap-2">
                     <Calendar size={16} />
                     <span className="text-sm font-medium">{exp.period}</span>
@@ -101,8 +105,8 @@ const Experience = () => {
               <ul className="space-y-2 mb-6">
                 {exp.highlights.map((highlight, idx) => (
                   <li key={idx} className="flex items-start">
-                    <span className="text-blue-600 mr-2 mt-1">•</span>
-                    <span className="text-slate-700">{highlight}</span>
+                    <span className="text-blue-600 dark:text-blue-400 mr-2 mt-1">•</span>
+                    <span className={isDark ? 'text-slate-300' : 'text-slate-700'}>{highlight}</span>
                   </li>
                 ))}
               </ul>
@@ -111,7 +115,7 @@ const Experience = () => {
                 {exp.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                    className={`px-3 py-1 rounded-full text-sm font-medium ${isDark ? 'bg-blue-900 text-blue-300' : 'bg-blue-50 text-blue-700'}`}
                   >
                     {tech}
                   </span>

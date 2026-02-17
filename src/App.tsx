@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Navigation from './components/Navigation';
 import ModeSelector from './components/ModeSelector';
 import VideoJourney from './components/VideoJourney';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   const [mode, setMode] = useState<'traditional' | 'video' | null>(null);
@@ -25,28 +26,33 @@ function App() {
   };
 
   if (mode === null) {
-    return <ModeSelector onSelectMode={handleModeSelect} />;
+    return (
+      <ThemeProvider>
+        <ModeSelector onSelectMode={handleModeSelect} />
+      </ThemeProvider>
+    );
   }
 
   if (mode === 'video') {
     return (
-      <>
-        <Navigation onModeSwitch={handleModeSelect} currentMode={mode} />
-        <VideoJourney />
-      </>
+      <ThemeProvider>
+        <VideoJourney onModeSwitch={handleModeSelect} />
+      </ThemeProvider>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
-      <Navigation onModeSwitch={handleModeSelect} currentMode={mode} />
-      <Hero />
+    <ThemeProvider>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-900">
+        <Navigation onModeSwitch={handleModeSelect} currentMode={mode} />
+        <Hero />
       <About />
       <Experience />
       <Skills />
       <Education />
       <Contact />
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
 
