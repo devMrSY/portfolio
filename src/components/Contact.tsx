@@ -90,10 +90,10 @@ const Contact = () => {
               href="https://drive.google.com/file/d/1M_PMEYwuQLYd1qWwm-HnpJa7xVmzxCYL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center justify-center gap-2 px-8 py-4 text-white rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg font-medium ${isDark ? 'bg-slate-600 hover:bg-slate-500' : 'bg-slate-700 hover:bg-slate-800'}`}
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-white rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg font-semibold bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-300 hover:via-amber-400 hover:to-amber-500 shadow-[0_0_24px_rgba(251,191,36,0.45)]"
             >
               <Download size={24} className="animate-bounce" />
-              Download
+              Download Resume
             </a>
           </div>
 

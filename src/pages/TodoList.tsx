@@ -6,6 +6,7 @@ const todos = [
   'Add authentication for secure updates',
   'Build UI for create/edit/delete',
   'Hook up notifications',
+  'let user to enter email to get resume on email Id or somehting like that',
 ];
 
 const TodoList = () => {
