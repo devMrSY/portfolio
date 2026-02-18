@@ -34,45 +34,15 @@ const Hero = () => {
     >
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
-          <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight ${isDark ? 'text-white' : 'text-slate-900'} mb-4`}>
+          <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight ${isDark ? 'text-white' : 'text-slate-900'} mb-3`}>
             Sooraj Yadav
           </h1>
-          <p className={`text-xl sm:text-2xl lg:text-3xl ${isDark ? 'text-slate-300' : 'text-slate-700'} mb-3`}>
+          <p className={`text-base sm:text-lg lg:text-xl ${isDark ? 'text-slate-300' : 'text-slate-700'} mb-3`}>
             Full-Stack Engineer – Applied GenAI
           </p>
-          <p className="text-base sm:text-lg lg:text-xl text-blue-600 dark:text-blue-400 font-medium max-w-3xl mx-auto leading-relaxed mb-8">
+          <p className="text-base sm:text-lg lg:text-xl text-blue-600 dark:text-blue-400 font-medium max-w-2xl mx-auto leading-relaxed mb-8">
             Building & Owning End-to-End Scalable Systems, Products & Cloud Architectures
           </p>
-
-          <div className={`flex flex-wrap justify-center items-center gap-4 mb-8 text-sm sm:text-base ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
-            <div className="flex items-center gap-2">
-              <MapPin size={18} />
-              <span>South Delhi, India</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone size={18} />
-              <span>9211139060</span>
-            </div>
-          </div>
-
-          <div className="flex justify-center gap-4 mb-12">
-            <a
-              href="mailto:frankSooraj@gmail.com"
-              className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              <Mail size={20} />
-              Email Me
-            </a>
-            <a
-              href="https://linkedin.com/in/devmrsy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg ${isDark ? 'bg-slate-700 text-white hover:bg-slate-600' : 'bg-slate-700 text-white hover:bg-slate-800'}`}
-            >
-              <Linkedin size={20} />
-              LinkedIn
-            </a>
-          </div>
 
           <div className="animate-bounce mt-12">
             <button
