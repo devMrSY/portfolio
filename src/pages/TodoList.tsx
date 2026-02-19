@@ -40,7 +40,8 @@ const TodoList = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
   const apiBase = useMemo(
-    () => import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000',
+    () => import.meta.env.VITE_API_BASE_URL || 'https://portfolio-backend-ashy-nine-81.vercel.app',
+    // () => 'http://localhost:3000',
     []
   );
 
