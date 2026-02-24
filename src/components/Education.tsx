@@ -27,7 +27,7 @@ const Education = () => {
                 </p>
                 <div className={`flex items-center gap-2 ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
                   <Calendar size={18} />
-                  <span className="font-medium">2017 – 2020</span>
+                  <span className="font-medium">Jul 2017 - Oct 2020</span>
                 </div>
               </div>
             </div>
@@ -39,3 +39,4 @@ const Education = () => {
 };
 
 export default Education;
+

@@ -102,7 +102,7 @@ const Contact = () => {
 
       <footer className={`mt-20 pt-8 border-t text-center ${isDark ? 'border-slate-700 text-slate-400' : 'border-slate-200 text-slate-600'}`}>
         <p>
-          © 2026 Sooraj Yadav. All rights reserved.
+          (c) 2026 Sooraj Yadav. All rights reserved.
         </p>
       </footer>
     </section>
@@ -110,3 +110,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

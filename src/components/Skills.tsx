@@ -9,12 +9,12 @@ const Skills = () => {
     {
       icon: Code,
       title: 'Languages',
-      skills: ['JavaScript (ES6+)', 'TypeScript', 'JSX', 'Python', 'Java 8'],
+      skills: ['JavaScript (ES5/ES6)', 'TypeScript', 'JSX', 'Python 3.6', 'Java 8'],
     },
     {
       icon: Layers,
       title: 'Frontend',
-      skills: ['React.js', 'Redux', 'Angular', 'Next.js', 'Material-UI', 'Bootstrap'],
+      skills: ['React.js', 'Redux', 'Angular', 'Next.js', 'Material-UI (MUI 4/5)', 'Bootstrap', 'HTML5', 'CSS3'],
     },
     {
       icon: Layers,
@@ -23,18 +23,18 @@ const Skills = () => {
     },
     {
       icon: Cloud,
-      title: 'Cloud & DevOps',
-      skills: ['AWS', 'GCP', 'Jenkins', 'Docker'],
+      title: 'Cloud & AI',
+      skills: ['AWS (Rekognition, SQS, SNS, EC2, CloudWatch, Bedrock)', 'GCP (Pub/Sub, Perspective API, Speech-to-Text)'],
     },
     {
       icon: Video,
       title: 'Media & AI',
-      skills: ['FFmpeg', 'LLM Integrations', 'Video Intelligence Pipelines'],
+      skills: ['FFmpeg', 'LLM Integrations', 'Embedding Search', 'Content Moderation'],
     },
     {
       icon: Wrench,
       title: 'Tools',
-      skills: ['Git', 'Jira', 'ClickUp', 'Bitbucket', 'Confluence', 'Postman'],
+      skills: ['Git', 'Jira', 'ClickUp', 'Bitbucket', 'Confluence', 'Postman', 'Jenkins', 'Docker'],
     },
   ];
 
@@ -80,16 +80,15 @@ const Skills = () => {
           <h3 className="text-2xl font-bold mb-4">Career Achievements</h3>
           <div className="space-y-3">
             <div className="flex items-start">
-              <span className={`mr-3 mt-1 ${isDark ? 'text-blue-300' : 'text-blue-200'}`}>★</span>
+              <span className={`mr-3 mt-1 ${isDark ? 'text-blue-300' : 'text-blue-200'}`}>-</span>
               <p className={isDark ? 'text-slate-200' : 'text-blue-50'}>
-                Promoted from Associate Software Engineer to Software Developer I based on
-                performance and ownership
+                Recognized for impact and promoted to Software Developer Level 1.
               </p>
             </div>
             <div className="flex items-start">
-              <span className={`mr-3 mt-1 ${isDark ? 'text-blue-300' : 'text-blue-200'}`}>★</span>
+              <span className={`mr-3 mt-1 ${isDark ? 'text-blue-300' : 'text-blue-200'}`}>-</span>
               <p className={isDark ? 'text-slate-200' : 'text-blue-50'}>
-                Promoted to Software Engineer II for leading AI-driven video platform initiatives
+                Recognized for impact and promoted to Software Developer Level 2.
               </p>
             </div>
           </div>
@@ -100,3 +99,4 @@ const Skills = () => {
 };
 
 export default Skills;
+

@@ -4,6 +4,8 @@ import About from '../components/About';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Education from '../components/Education';
+import Certifications from '../components/Certifications';
+import Languages from '../components/Languages';
 import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
 import VideoJourney from '../components/VideoJourney';
@@ -21,6 +23,8 @@ function TraditionalView({ onModeSwitch }: { onModeSwitch: (mode: 'traditional' 
       <Experience />
       <Skills />
       <Education />
+      <Certifications />
+      <Languages />
       <Contact />
     </div>
   );

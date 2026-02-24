@@ -14,7 +14,9 @@ const Experience = () => {
       period: 'Feb 2024 - Present',
       highlights: [
         'Leading the development of AI-based features, integrating LLMs and cloud AI to automate content understanding, moderation, and enrichment for video, image, text, and audio.',
-        'Owned GluedIn?s main marketing website in Next.js, delivering new features, blog updates, and ongoing content changes.',
+        'Delivered end-to-end Asset Catalog enhancement: session creation, AI asset tagging, and publication workflows (auto-publish or review-before-publish).',
+        'Built review pipeline with a Pending Review queue, accept/reject actions, and notification deep-links for fast content approval.',
+        'Owned GluedIn\'s main marketing website in Next.js, delivering new features, blog updates, and ongoing content changes.',
         'Designed and implemented content screening systems for text, detecting profanity, hate speech, and sensitive context using Perspective API.',
         'Migrated Java microservices to Node.js, enhancing system efficiency and scalability.',
         'Led the end-to-end implementation of content moderation services for video, audio, and text.',
@@ -23,7 +25,7 @@ const Experience = () => {
         'Utilized AWS and GCP services, including Pub/Sub for serverless messaging systems, to streamline communication and data processing.',
         'Managed deployment processes with Jenkins and monitored services using AWS CloudWatch.',
       ],
-      technologies: ['AWS', 'GCP', 'Node.js', 'Next.js', 'NestJS', 'React', 'FFmpeg', 'Docker', 'LLMs'],
+      technologies: ['AWS', 'GCP', 'Node.js', 'Next.js', 'NestJS', 'React', 'FFmpeg', 'Docker', 'LLMs', 'Bedrock'],
     },
     {
       title: 'Full Stack Developer',
@@ -109,7 +111,7 @@ const Experience = () => {
               <ul className="space-y-2 mb-6">
                 {exp.highlights.map((highlight, idx) => (
                   <li key={idx} className="flex items-start">
-                    <span className="text-blue-600 dark:text-blue-400 mr-2 mt-1">•</span>
+                    <span className="text-blue-600 dark:text-blue-400 mr-2 mt-1">-</span>
                     <span className={isDark ? 'text-slate-300' : 'text-slate-700'}>{highlight}</span>
                   </li>
                 ))}
@@ -134,3 +136,4 @@ const Experience = () => {
 };
 
 export default Experience;
+

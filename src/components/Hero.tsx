@@ -38,7 +38,7 @@ const Hero = () => {
             Sooraj Yadav
           </h1>
           <p className={`text-base sm:text-lg lg:text-xl ${isDark ? 'text-slate-300' : 'text-slate-700'} mb-3`}>
-            Full-Stack Engineer – Applied GenAI
+            Full-Stack Software Engineer | AI/LLM
           </p>
           <p className="text-base sm:text-lg lg:text-xl text-blue-600 dark:text-blue-400 font-medium max-w-2xl mx-auto leading-relaxed mb-8">
             Building & Owning End-to-End Scalable Systems, Products & Cloud Architectures
@@ -126,3 +126,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

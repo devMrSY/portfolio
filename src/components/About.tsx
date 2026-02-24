@@ -37,16 +37,27 @@ const About = () => {
 
         <div className={`rounded-2xl shadow-xl p-8 mb-12 ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
           <p className={`text-lg leading-relaxed mb-6 ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
-            I'm a passionate Software Engineer with over 4 years of experience in full-stack development,
-            specializing in AI-powered video intelligence and cloud-based platforms. Currently working at
-            GluedIn, I lead the development of cutting-edge video processing pipelines that leverage machine
-            learning and cloud AI services.
+            I'm a full-stack Software Engineer with 5+ years of experience in React and Node.js,
+            specializing in AI-powered video intelligence and cloud-based platforms. At GluedIn, I lead
+            AI-driven features that automate content understanding, moderation, and enrichment using LLMs
+            and cloud AI services.
           </p>
           <p className={`text-lg leading-relaxed ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
-            My expertise spans across modern web technologies, video processing systems, and scalable
-            cloud architectures. I've been promoted twice based on performance and ownership, most recently
-            to Software Engineer II for leading AI-driven video platform initiatives.
+            My expertise spans full-stack product ownership, LLM integrations, embedding-based search, and
+            scalable cloud architectures. I've been promoted twice based on performance and ownership, most
+            recently to Software Engineer II for leading AI-driven video platform initiatives.
           </p>
+          <div className={`mt-6 rounded-xl p-5 ${isDark ? 'bg-slate-900/50' : 'bg-slate-50'}`}>
+            <p className={`text-sm uppercase tracking-[0.2em] mb-3 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+              Key Strengths
+            </p>
+            <ul className={`space-y-2 ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
+              <li>End-to-end ownership across React frontends and Node.js/NestJS backends</li>
+              <li>AI/LLM feature development using cloud AI services and LLM-based workflows</li>
+              <li>Embedding extraction and semantic search workflows for accurate matching results</li>
+              <li>CI/CD delivery with Jenkins, Dockerized services, and production monitoring</li>
+            </ul>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

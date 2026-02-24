@@ -25,6 +25,8 @@ const Navigation = ({ onModeSwitch, currentMode }: NavigationProps) => {
     { label: 'Experience', href: '#experience' },
     { label: 'Skills', href: '#skills' },
     { label: 'Education', href: '#education' },
+    { label: 'Certification', href: '#certifications' },
+    { label: 'Languages', href: '#languages' },
     { label: 'Contact', href: '#contact' },
   ];
 
