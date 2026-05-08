@@ -23,18 +23,18 @@ const Skills = () => {
     },
     {
       icon: Cloud,
-      title: 'Cloud & AI',
-      skills: ['AWS (Rekognition, SQS, SNS, EC2, CloudWatch, Bedrock)', 'GCP (Pub/Sub, Perspective API, Speech-to-Text)'],
+      title: 'AI & Cloud',
+      skills: ['AWS (Bedrock, SQS, SNS, EC2, CloudWatch)', 'GCP (Pub/Sub, Perspective API, Speech-to-Text)', 'LLM Integrations', 'Embedding Search'],
     },
     {
       icon: Video,
-      title: 'Media & AI',
-      skills: ['FFmpeg', 'LLM Integrations', 'Embedding Search', 'Content Moderation'],
+      title: 'Product & AI',
+      skills: ['AI workflow design', 'Prompt engineering', 'Product roadmaps', 'User funnel optimization', 'Editorial automation'],
     },
     {
       icon: Wrench,
       title: 'Tools',
-      skills: ['Git', 'Jira', 'ClickUp', 'Bitbucket', 'Confluence', 'Postman', 'Jenkins', 'Docker'],
+      skills: ['Git', 'Jira', 'ClickUp', 'Confluence', 'Postman', 'Jenkins', 'Docker'],
     },
   ];
 
@@ -82,13 +82,13 @@ const Skills = () => {
             <div className="flex items-start">
               <span className={`mr-3 mt-1 ${isDark ? 'text-blue-300' : 'text-blue-200'}`}>-</span>
               <p className={isDark ? 'text-slate-200' : 'text-blue-50'}>
-                Recognized for impact and promoted to Software Developer Level 1.
+                Delivered AI and product features that improved editorial operations and customer content discovery.
               </p>
             </div>
             <div className="flex items-start">
               <span className={`mr-3 mt-1 ${isDark ? 'text-blue-300' : 'text-blue-200'}`}>-</span>
               <p className={isDark ? 'text-slate-200' : 'text-blue-50'}>
-                Recognized for impact and promoted to Software Developer Level 2.
+                Promoted into a product and AI leadership role by owning end-to-end execution and delivering high-impact launches.
               </p>
             </div>
           </div>

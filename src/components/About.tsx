@@ -8,23 +8,23 @@ const About = () => {
   const highlights = [
     {
       icon: Video,
-      title: 'Video Intelligence',
-      description: 'Expert in building AI-powered video processing pipelines',
+      title: 'AI Product Strategy',
+      description: 'Shaped product direction for AI-first features and internal workflow tooling',
     },
     {
       icon: Code2,
-      title: 'Full Stack Development',
-      description: 'Proficient in React, Node.js, and modern web technologies',
+      title: 'Cross-Functional Execution',
+      description: 'Delivered product launches with engineering, design, editorial, and business teams',
     },
     {
       icon: Cloud,
-      title: 'Cloud Architecture',
-      description: 'Experience with AWS and GCP for scalable solutions',
+      title: 'Unified Content & Data',
+      description: 'Built content discovery and data-driven experiences that connect editorial workflows and customer value',
     },
     {
       icon: Zap,
-      title: 'Performance Optimization',
-      description: 'Specialized in building high-performance, scalable systems',
+      title: 'Operational Velocity',
+      description: 'Focused on shipping fast, iterating quickly, and scaling end-to-end product workflows',
     },
   ];
 
@@ -37,25 +37,20 @@ const About = () => {
 
         <div className={`rounded-2xl shadow-xl p-8 mb-12 ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
           <p className={`text-lg leading-relaxed mb-6 ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
-            I'm a full-stack Software Engineer with 5+ years of experience in React and Node.js,
-            specializing in AI-powered video intelligence and cloud-based platforms. At GluedIn, I lead
-            AI-driven features that automate content understanding, moderation, and enrichment using LLMs
-            and cloud AI services.
+            I'm a product-focused AI operator with 5+ years of hands-on experience turning founder intent into shipped work. I drive unified content, product, and AI initiatives that improve discovery, retention, and internal productivity across fast-moving digital platforms.
           </p>
           <p className={`text-lg leading-relaxed ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
-            My expertise spans full-stack product ownership, LLM integrations, embedding-based search, and
-            scalable cloud architectures. I've been promoted twice based on performance and ownership, most
-            recently to Software Engineer II for leading AI-driven video platform initiatives.
+            At GluedIn, I own product delivery for AI-powered workflows, internal tooling, and content experiences that bridge editorial teams with engineering execution. I thrive in ambiguous environments and ship decisions that move millions of users.
           </p>
           <div className={`mt-6 rounded-xl p-5 ${isDark ? 'bg-slate-900/50' : 'bg-slate-50'}`}>
             <p className={`text-sm uppercase tracking-[0.2em] mb-3 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
               Key Strengths
             </p>
             <ul className={`space-y-2 ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
-              <li>End-to-end ownership across React frontends and Node.js/NestJS backends</li>
-              <li>AI/LLM feature development using cloud AI services and LLM-based workflows</li>
-              <li>Embedding extraction and semantic search workflows for accurate matching results</li>
-              <li>CI/CD delivery with Jenkins, Dockerized services, and production monitoring</li>
+              <li>End-to-end ownership of product execution, from PRDs and specs to engineering delivery</li>
+              <li>AI/LLM feature development using cloud AI services, prompt workflows, and internal automation</li>
+              <li>Designed semantic content discovery and unified data-driven product experiences</li>
+              <li>Ship-first operations with CI/CD, deployment automation, and monitoring for fast iteration</li>
             </ul>
           </div>
         </div>
