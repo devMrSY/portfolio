@@ -19,9 +19,10 @@
         padding: 24px;
         font-family: Arial, Helvetica, sans-serif;
         color: var(--text);
-        background: #ffffff;
+        background: linear-gradient(to bottom right, #f8fafc, #dbeafe, #f1f5f9);
         font-size: 14px;
         line-height: 1.5;
+        transition: background-color 0.3s;
       }
 
       .resume {
@@ -39,6 +40,13 @@
         margin: 0;
         font-size: 20px;
         font-weight: 700;
+      }
+
+      .subtitle {
+        margin: 4px 0 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--muted);
       }
 
       h2 {
@@ -162,6 +170,7 @@
       </div>
       <div class="header">
         <h1>Sooraj Yadav</h1>
+        <p class="subtitle">Strategic Initiatives | AI Product Operations | Execution</p>
         <div class="contact-grid">
           <div>Mobile No: 9211139060</div>
           <div>Email Id: <a href="mailto:frankSooraj@gmail.com">frankSooraj@gmail.com</a></div>
@@ -172,16 +181,16 @@
 
       <h2>Professional Summary</h2>
       <div class="section">
-        <p>Full-stack software engineer with 5+ years building and shipping React + Node.js products end-to-end. Experienced in AI-assisted content understanding and moderation, LLM integrations, and scalable backend services. Known for owning long-running projects, moving fast with small teams, and delivering reliable releases.</p>
+        <p>I'm a product-focused AI operator with 5+ years of hands-on experience turning founder intent into shipped work. I drive unified content, product, and AI initiatives that improve discovery, retention, and internal productivity across fast-moving digital platforms.</p>
+        <p>At GluedIn, I own product delivery for AI-powered workflows, internal tooling, and content experiences that bridge editorial teams with engineering execution. I thrive in ambiguous environments and ship decisions that move millions of users.</p>
       </div>
 
       <h2>Key Strengths</h2>
       <ul>
-        <li>End-to-end ownership across React frontends and Node.js/NestJS backends</li>
-        <li>AI/LLM feature development using cloud AI services and LLM-based workflows</li>
-        <li>Embedding extraction and semantic search workflows for accurate matching results</li>
-        <li>Content moderation pipelines for video, audio, image, and text at scale</li>
-        <li>CI/CD delivery with Jenkins, Dockerized services, and production monitoring</li>
+        <li>End-to-end ownership of product execution, from PRDs and specs to engineering delivery</li>
+        <li>AI/LLM feature development using cloud AI services, prompt workflows, and internal automation</li>
+        <li>Designed semantic content discovery and unified data-driven product experiences</li>
+        <li>Ship-first operations with CI/CD, deployment automation, and monitoring for fast iteration</li>
       </ul>
 
       <h2>Work Experience</h2>
@@ -197,25 +206,19 @@
         </div>
         <p class="label">Roles and Responsibilities</p>
         <ul>
-          <li>Leading the development of AI-based features, integrating large language models (LLMs) and cloud AI to automate content understanding, moderation, and enrichment for video, image, text, and audio</li>
-          <li>Delivered end-to-end Asset Catalog enhancement: session creation, AI asset tagging, and publication workflows (auto-publish or review-before-publish).</li>
-          <li>Built review pipeline with a Pending Review queue, accept/reject actions, and notification deep-links for fast content approval.</li>
-          <li>Owned GluedIn’s main marketing website in Next.js, delivering new features, blog updates, and ongoing content changes.</li>
-          <li>Designed and implemented content screening systems for text, detecting profanity, hate speech, and sensitive context using Perspective API.</li>
-          <li>Migrated Java microservices to Node.js, enhancing system efficiency and scalability.</li>
-          <li>Led the end-to-end implementation of content moderation services, handling video, audio, and text moderation.</li>
-          <li>Optimized the performance of an existing admin panel and migrated it to React for improved user experience.</li>
-          <li>Developed responsive screens using a modular approach to ensure flexibility and maintainability.</li>
-          <li>Utilized AWS and GCP services, including Pub/Sub for serverless messaging systems, to streamline communication and data processing.</li>
-          <li>Managed deployment processes with Jenkins and monitored services using AWS CloudWatch.</li>
+          <li>Owned product execution for cross-functional AI and content initiatives, unifying editorial workflows with customer-facing experiences.</li>
+          <li>Led a unified content discovery roadmap by building search, personalization, and content-data integration features.</li>
+          <li>Delivered internal AI tooling for editorial co-pilots and workflow automation, increasing team productivity and content velocity.</li>
+          <li>Shipped mobile-friendly content tooling and retention-focused user flows in close partnership with engineering and UX.</li>
+          <li>Defined specs, acceptance criteria, and launch metrics for product features while working directly with developers and stakeholders.</li>
+          <li>Built a fast iterate review pipeline for content approval and moderation, reducing operational cycle time.</li>
+          <li>Led content screening automation using AI and cloud services for text, image, audio, and video compliance.</li>
+          <li>Migrated backend services to Node.js and optimized deployment workflows for faster releases and monitoring.</li>
+          <li>Owned product launch readiness for the marketing website, editorial microsites, and content operations integrations.</li>
         </ul>
         <p class="label">Technology</p>
         <ul>
-          <li>Cloud Platforms: AWS (Rekognition, SQS, SNS, EC2), GCP (Pub/Sub, Perspective API, Speech-to-Text), Bedrock</li>
-          <li>Deployment: Jenkins CI/CD</li>
-          <li>Languages: Primary (JavaScript, JSX, TypeScript), Secondary (Python, Java 8)</li>
-          <li>Frameworks: Node.js, Spring Boot, Angular, React.js, Next.js, Redux, Express, NestJS; Fury for Angular</li>
-          <li>Others: FFmpeg, Monolithic and Microservices, Docker</li>
+          <li>AWS, GCP, Node.js, Next.js, NestJS, React, LLMs, Bedrock, Docker, Prompt Design</li>
         </ul>
       </div>
 
@@ -296,7 +299,7 @@
       <div class="section">
         <div>B.tech</div>
         <div class="row meta">
-          <div>HMR Institute of Technology &amp; Mgmt., GGSIPU (July-17 - October 20)</div>
+          <div>HMR Institute of Technology &amp; Mgmt., GGSIPU (Jul 2017 - Oct 2020)</div>
           <div>Delhi, India</div>
         </div>
         <p>Graduation</p>
@@ -307,23 +310,20 @@
 
       <h2>Skills</h2>
       <ul>
-        <li>Languages: JavaScript (ES5/ES6), TypeScript, JSX; Python 3.6, Java 8</li>
-        <li>Frontend: React.js, Next.js, Angular, Redux, Material-UI (MUI 4/5), Bootstrap, HTML5, CSS3</li>
-        <li>Backend: Node.js, Express.js, NestJS, Spring Boot</li>
-        <li>Cloud &amp; AI: AWS (Rekognition, SQS, SNS, EC2, CloudWatch, Bedrock), GCP (Pub/Sub, Perspective API, Speech-to-Text)</li>
-        <li>Real-time &amp; Media: Socket.io, Agora SDK, FFmpeg</li>
-        <li>Databases &amp; ORM: MongoDB, SQL, Mongoose, Sequelize</li>
-        <li>CI/CD &amp; DevOps: Jenkins, Docker</li>
-        <li>Testing &amp; QA: Postman collections, end-to-end manual testing</li>
-        <li>Tools: Git, Jira, ClickUp, Bitbucket, Confluence</li>
+        <li>Languages: JavaScript (ES5/ES6), TypeScript, JSX, Python 3.6, Java 8</li>
+        <li>Frontend: React.js, Redux, Angular, Next.js, Material-UI (MUI 4/5), Bootstrap, HTML5, CSS3</li>
+        <li>Backend: Node.js, NestJS, Express.js, Spring Boot</li>
+        <li>AI & Cloud: AWS (Bedrock, SQS, SNS, EC2, CloudWatch), GCP (Pub/Sub, Perspective API, Speech-to-Text), LLM Integrations, Embedding Search</li>
+        <li>Product & AI: AI workflow design, Prompt engineering, Product roadmaps, User funnel optimization, Editorial automation</li>
+        <li>Tools: Git, Jira, ClickUp, Confluence, Postman, Jenkins, Docker</li>
       </ul>
 
       <h2>Achievements</h2>
-      <p>Recognized for impact and promoted to Software Developer Level 1.</p>
-      <p>Recognized for impact and promoted to Software Developer Level 2.</p>
+      <p>Delivered AI and product features that improved editorial operations and customer content discovery.</p>
+      <p>Promoted into a product and AI leadership role by owning end-to-end execution and delivering high-impact launches.</p>
 
       <h2>Certification</h2>
-      <p>I completed my summer training in MEAN Stack technology and also worked on a project named Koncept Interior.</p>
+      <p>Completed summer training in MEAN Stack technology and delivered a project named Koncept Interior.</p>
 
       <h2>Languages</h2>
       <div class="row">

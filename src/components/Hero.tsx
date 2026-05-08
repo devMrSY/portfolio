@@ -38,7 +38,7 @@ const Hero = () => {
             Sooraj Yadav
           </h1>
           <p className={`text-base sm:text-lg lg:text-xl ${isDark ? 'text-slate-300' : 'text-slate-700'} mb-3`}>
-            AI Product Operator | Founder’s Office | Product & AI Execution
+            Strategic Initiatives | AI Product Operations | Execution
           </p>
           <p className="text-base sm:text-lg lg:text-xl text-blue-600 dark:text-blue-400 font-medium max-w-2xl mx-auto leading-relaxed mb-8">
             Turning strategy into shipped product experiences, with a focus on unified content workflows, mobile 0-to-1 launches, and embedded AI across people, products, and operations.
